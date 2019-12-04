@@ -1,7 +1,7 @@
 // @flow
 import _ from 'lodash';
 import {connect} from 'react-redux';
-import {View, Image, ScrollView, Platform} from 'react-native';
+import {View, Image, ScrollView, Platform, StyleSheet} from 'react-native';
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {Actions} from 'react-native-router-flux';
@@ -9,7 +9,7 @@ import DataHandler from '../../services/DataHandler';
 import {INVALID_EMAIL_ERROR, INVALID_PASSWORD_ERROR} from '../../constants';
 import {Text, ButtonView, TextInput, Loader} from '../../components';
 import {Images, AppStyles, Colors} from '../../theme';
-import styles from './styles';
+//import styles from './styles';
 import Util from '../../util';
 
 class Login extends Component {
@@ -110,7 +110,14 @@ class Login extends Component {
   renderLogo() {
     return (
       <View
-        style={[AppStyles.centerInner, AppStyles.mTop30, AppStyles.mBottom30]}>
+        style={[
+          {
+            justifyContent: 'center',
+            alignItems: 'center',
+          },
+          AppStyles.mTop30,
+          AppStyles.mBottom30,
+        ]}>
         <Image source={Images.logo} style={AppStyles.logoImage} />
       </View>
     );
@@ -146,7 +153,17 @@ class Login extends Component {
         </View>
         <ButtonView
           onPress={this._onSubmit}
-          style={[AppStyles.buttonStyle1, AppStyles.mTop25]}>
+          style={[
+            {
+              color: Colors.white,
+              backgroundColor: Colors.blue,
+              height: 45,
+              borderRadius: 45 / 2,
+              justifyContent: 'center',
+              alignItems: 'center',
+            },
+            AppStyles.mTop25,
+          ]}>
           <Text
             color={Colors.white}
             textAlign="center"
@@ -175,7 +192,14 @@ class Login extends Component {
   renderSignupBtn() {
     return (
       <View
-        style={[AppStyles.mTop25, AppStyles.flexRow, AppStyles.centerInner]}>
+        style={[
+          AppStyles.mTop25,
+          AppStyles.flexRow,
+          {
+            justifyContent: 'center',
+            alignItems: 'center',
+          },
+        ]}>
         <Text color={Colors.grey4}>Don’t have an account ? </Text>
         <ButtonView onPress={Actions.signup}>
           <Text textAlign="center" type="medium" color={Colors.blue}>
@@ -190,8 +214,22 @@ class Login extends Component {
     return (
       <React.Fragment>
         <View style={[AppStyles.mTop30, AppStyles.mRight20, AppStyles.mLeft20]}>
-          <View style={styles.lineThrough} />
-          <View style={styles.ORTextWrapper}>
+          <View
+            style={{
+              height: 0.5,
+              backgroundColor: Colors.grey4,
+              position: 'absolute',
+              top: 6,
+              left: 0,
+              right: 0,
+            }}
+          />
+          <View
+            style={{
+              backgroundColor: Colors.white,
+              width: 110,
+              alignSelf: 'center',
+            }}>
             <Text size="xxSmall" color={Colors.grey4} textAlign="center">
               OR LOGIN WITH
             </Text>
@@ -223,7 +261,14 @@ class Login extends Component {
     const {errors, loading} = this.state;
 
     return (
-      <View style={styles.container}>
+      <View
+        style={{
+          flex: 1,
+          padding: Metrics.baseMargin,
+          backgroundColor: Colors.background.primary,
+          paddingTop: Metrics.statusBarHeight,
+          ...AppStyles.pBottom0,
+        }}>
         <ScrollView
           showsVerticalScrollIndicator={false}
           keyboardShouldPersistTaps="handled">
@@ -244,3 +289,25 @@ const mapStateToProps = () => ({});
 const actions = {};
 
 export default connect(mapStateToProps, actions)(Login);
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    padding: Metrics.baseMargin,
+    backgroundColor: Colors.background.primary,
+    paddingTop: Metrics.statusBarHeight,
+    ...AppStyles.pBottom0,
+  },
+  button: {
+    marginTop: Metrics.ratio(30),
+  },
+  logo: {width: 96, height: 112},
+  lineThrough: {
+    height: 0.5,
+    backgroundColor: Colors.grey4,
+    position: 'absolute',
+    top: 6,
+    left: 0,
+    right: 0,
+  },
+});

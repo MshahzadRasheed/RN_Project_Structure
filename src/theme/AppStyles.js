@@ -1,29 +1,29 @@
-import { Platform } from "react-native";
-import { Metrics, Colors } from "./";
-import Fonts from "./Fonts";
+import {Platform} from 'react-native';
+import {Metrics, Colors} from './';
+import Fonts from './Fonts';
 
 // @flow
 
 const flex = {
-  flex: 1
+  flex: 1,
 };
 const flex2 = {
-  flex: 2
+  flex: 2,
 };
 const flex3 = {
-  flex: 3
+  flex: 3,
 };
 const flex7 = {
-  flex: 7
+  flex: 7,
 };
 const flexRow = {
-  flexDirection: "row"
+  flexDirection: 'row',
 };
 const spaceBetween = {
-  justifyContent: "space-between"
+  justifyContent: 'space-between',
 };
 const spaceAround = {
-  justifyContent: "space-around"
+  justifyContent: 'space-around',
 };
 
 /* const shadow1 = {
@@ -41,461 +41,461 @@ const shadow1 = {
   shadowColor: Colors.grey5,
   shadowOffset: {
     width: 0,
-    height: 2
+    height: 2,
   },
   shadowOpacity: 0.1,
   shadowRadius: 3.84,
 
-  elevation: 5
+  elevation: 5,
 };
 
 const shadow2 = {
-  shadowColor: "#000",
+  shadowColor: '#000',
   shadowOffset: {
     width: 0,
-    height: 2
+    height: 2,
   },
   shadowOpacity: 0.1,
   shadowRadius: 4.84,
 
-  elevation: 2
+  elevation: 2,
 };
 
 const emptyListContainerStyle = {
   flex: 1,
-  justifyContent: "center",
-  alignItems: "center"
+  justifyContent: 'center',
+  alignItems: 'center',
 };
 
 // Margins
 // Margin TOP
 const mTop0 = {
-  marginTop: 0
+  marginTop: 0,
 };
 const lHeight20 = {
-  lineHeight: 20
+  lineHeight: 20,
 };
 const lHeight22 = {
-  lineHeight: 22
+  lineHeight: 22,
 };
 const lHeight10 = {
-  lineHeight: 15
+  lineHeight: 15,
 };
 const mTop5 = {
-  marginTop: 5
+  marginTop: 5,
 };
 const mTop10 = {
-  marginTop: 10
+  marginTop: 10,
 };
 const mTop15 = {
-  marginTop: 15
+  marginTop: 15,
 };
 const mTop20 = {
-  marginTop: 20
+  marginTop: 20,
 };
 const mTop25 = {
-  marginTop: 25
+  marginTop: 25,
 };
 const mTop30 = {
-  marginTop: 30
+  marginTop: 30,
 };
 const mTop35 = {
-  marginTop: 35
+  marginTop: 35,
 };
 const mTop40 = {
-  marginTop: 40
+  marginTop: 40,
 };
 const mTopBase = {
-  marginTop: Metrics.baseMargin
+  marginTop: Metrics.baseMargin,
 };
 
 // Margin BOTTOM
 const mBottom0 = {
-  marginBottom: 0
+  marginBottom: 0,
 };
 const mBottom5 = {
-  marginBottom: 5
+  marginBottom: 5,
 };
 const mBottom10 = {
-  marginBottom: 10
+  marginBottom: 10,
 };
 const mBottom15 = {
-  marginBottom: 15
+  marginBottom: 15,
 };
 const mBottom20 = {
-  marginBottom: 20
+  marginBottom: 20,
 };
 const mBottom25 = {
-  marginBottom: 25
+  marginBottom: 25,
 };
 const mBottom30 = {
-  marginBottom: 30
+  marginBottom: 30,
 };
 
 const mBottom35 = {
-  marginBottom: 35
+  marginBottom: 35,
 };
 
 const mBottom40 = {
-  marginBottom: 40
+  marginBottom: 40,
 };
 const mBottom45 = {
-  marginBottom: 45
+  marginBottom: 45,
 };
 const mBottom50 = {
-  marginBottom: 50
+  marginBottom: 50,
 };
 const mBottomBase = {
-  marginBottom: Metrics.baseMargin
+  marginBottom: Metrics.baseMargin,
 };
-const mBottomListBottom = { marginBottom: Metrics.listBottomPadding };
+const mBottomListBottom = {marginBottom: Metrics.listBottomPadding};
 
 // Margin RIGHT
 const mRight0 = {
-  marginRight: 0
+  marginRight: 0,
 };
 const mRight5 = {
-  marginRight: 5
+  marginRight: 5,
 };
 const mRight10 = {
-  marginRight: 10
+  marginRight: 10,
 };
 
 const height200 = {
-  height: 200
+  height: 200,
 };
 const mRight15 = {
-  marginRight: 15
+  marginRight: 15,
 };
 const mRight20 = {
-  marginRight: 20
+  marginRight: 20,
 };
 const mRight25 = {
-  marginRight: 25
+  marginRight: 25,
 };
 const mRight30 = {
-  marginRight: 30
+  marginRight: 30,
 };
 const mRightBase = {
-  marginRight: Metrics.baseMargin
+  marginRight: Metrics.baseMargin,
 };
 
 // Margin LEFT
 const mLeft0 = {
-  marginLeft: 0
+  marginLeft: 0,
 };
 const mLeft5 = {
-  marginLeft: 5
+  marginLeft: 5,
 };
 const mLeft10 = {
-  marginLeft: 10
+  marginLeft: 10,
 };
 const mLeft15 = {
-  marginLeft: 15
+  marginLeft: 15,
 };
 const mLeft20 = {
-  marginLeft: 20
+  marginLeft: 20,
 };
 const mLeft25 = {
-  marginLeft: 25
+  marginLeft: 25,
 };
 const mLeft30 = {
-  marginLeft: 30
+  marginLeft: 30,
 };
 const mLeftBase = {
-  marginLeft: Metrics.baseMargin
+  marginLeft: Metrics.baseMargin,
 };
 // Margin ALL SIDES
 const margin5 = {
-  margin: 5
+  margin: 5,
 };
 const margin10 = {
-  margin: 10
+  margin: 10,
 };
 const margin15 = {
-  margin: 15
+  margin: 15,
 };
 const margin20 = {
-  margin: 20
+  margin: 20,
 };
 const margin25 = {
-  margin: 25
+  margin: 25,
 };
 const margin30 = {
-  margin: 30
+  margin: 30,
 };
 const marginHorizontalBase = {
   marginRight: Metrics.baseMargin,
-  marginLeft: Metrics.baseMargin
+  marginLeft: Metrics.baseMargin,
 };
 const marginHorizontalsmall = {
   marginRight: Metrics.baseMargin,
-  marginLeft: Metrics.baseMargin
+  marginLeft: Metrics.baseMargin,
 };
 
 const marginVerticalBase = {
   marginTop: Metrics.baseMargin,
-  marginBottom: Metrics.baseMargin
+  marginBottom: Metrics.baseMargin,
 };
 
 // Padding
 // padding TOP
 const pTop0 = {
-  paddingTop: 0
+  paddingTop: 0,
 };
 const pTop5 = {
-  paddingTop: 5
+  paddingTop: 5,
 };
 const pTop10 = {
-  paddingTop: 10
+  paddingTop: 10,
 };
 const pTop15 = {
-  paddingTop: 15
+  paddingTop: 15,
 };
 const pTop20 = {
-  paddingTop: 20
+  paddingTop: 20,
 };
 pTop25 = {
-  paddingTop: 25
+  paddingTop: 25,
 };
 const pTop30 = {
-  paddingTop: 30
+  paddingTop: 30,
 };
 const pTopBase = {
-  paddingTop: Metrics.baseMargin
+  paddingTop: Metrics.baseMargin,
 };
 // padding BOTTOM
 const pBottom0 = {
-  paddingBottom: 0
+  paddingBottom: 0,
 };
 const pBottom5 = {
-  paddingBottom: 5
+  paddingBottom: 5,
 };
 const pBottom10 = {
-  paddingBottom: 10
+  paddingBottom: 10,
 };
 const pBottom15 = {
-  paddingBottom: 15
+  paddingBottom: 15,
 };
 const pBottom20 = {
-  paddingBottom: 20
+  paddingBottom: 20,
 };
 const pBottom25 = {
-  paddingBottom: 25
+  paddingBottom: 25,
 };
 const pBottom30 = {
-  paddingBottom: 30
+  paddingBottom: 30,
 };
 const pBottom100 = {
-  paddingBottom: 100
+  paddingBottom: 100,
 };
 const pTopBottom = {
-  paddingTop: Metrics.baseMargin
+  paddingTop: Metrics.baseMargin,
 };
 const pBottomBase = {
-  paddingBottom: Metrics.baseMargin
+  paddingBottom: Metrics.baseMargin,
 };
 
-const pBottomListBottom = { paddingBottom: Metrics.listBottomPadding };
+const pBottomListBottom = {paddingBottom: Metrics.listBottomPadding};
 const pBottomListBottomWithTabbar = {
-  paddingBottom: Metrics.listBottomPadding + Metrics.tabBarHeight
+  paddingBottom: Metrics.listBottomPadding + Metrics.tabBarHeight,
 };
 // padding RIGHT
 const pRight0 = {
-  paddingRight: 0
+  paddingRight: 0,
 };
 const pRight5 = {
-  paddingRight: 5
+  paddingRight: 5,
 };
 const pRight10 = {
-  paddingRight: 10
+  paddingRight: 10,
 };
 const pRight15 = {
-  paddingRight: 15
+  paddingRight: 15,
 };
 const pRight20 = {
-  paddingRight: 20
+  paddingRight: 20,
 };
 const pRight25 = {
-  paddingRight: 25
+  paddingRight: 25,
 };
 const pRight30 = {
-  paddingRight: 30
+  paddingRight: 30,
 };
 const pRightBase = {
-  paddingRight: Metrics.baseMargin
+  paddingRight: Metrics.baseMargin,
 };
 // padding LEFT
 const pLeft0 = {
-  paddingLeft: 0
+  paddingLeft: 0,
 };
 const pLeft5 = {
-  paddingLeft: 5
+  paddingLeft: 5,
 };
 const pLeft10 = {
-  paddingLeft: 10
+  paddingLeft: 10,
 };
 const pLeft15 = {
-  paddingLeft: 15
+  paddingLeft: 15,
 };
 const pLeft20 = {
-  paddingLeft: 20
+  paddingLeft: 20,
 };
 const pLeft25 = {
-  paddingLeft: 25
+  paddingLeft: 25,
 };
 const pLeft30 = {
-  paddingLeft: 30
+  paddingLeft: 30,
 };
 const pLeftBase = {
-  paddingLeft: Metrics.baseMargin
+  paddingLeft: Metrics.baseMargin,
 };
 // padding ALL SIDES
 const padding0 = {
-  padding: 0
+  padding: 0,
 };
 const padding5 = {
-  padding: 5
+  padding: 5,
 };
 const padding10 = {
-  padding: 10
+  padding: 10,
 };
 const padding15 = {
-  padding: 15
+  padding: 15,
 };
 const padding20 = {
-  padding: 20
+  padding: 20,
 };
 const padding25 = {
-  padding: 25
+  padding: 25,
 };
 const padding30 = {
-  padding: 30
+  padding: 30,
 };
 
 const paddingHorizontalBase = {
   paddingRight: Metrics.baseMargin,
-  paddingLeft: Metrics.baseMargin
+  paddingLeft: Metrics.baseMargin,
 };
 
 const paddingVerticalBase = {
   paddingTop: Metrics.baseMargin,
-  paddingBottom: Metrics.baseMargin
+  paddingBottom: Metrics.baseMargin,
 };
 
 // styleConstantValue
 
 const constant = {
   formInputSize: 17,
-  labelSize: 15
+  labelSize: 15,
 };
 const letterSpace3 = {
-  letterSpacing: 3
+  letterSpacing: 3,
 };
 
 // styles
 const centerInner = {
-  justifyContent: "center",
-  alignItems: "center"
+  justifyContent: 'center',
+  alignItems: 'center',
 };
 const alignItemsCenter = {
-  alignItems: "center"
+  alignItems: 'center',
 };
 const baseAlign = {
-  alignSelf: "baseline"
+  alignSelf: 'baseline',
 };
 const alignItemsFlexEnd = {
-  alignItems: "flex-end"
+  alignItems: 'flex-end',
 };
 
 const basePadding = {
-  padding: Metrics.baseMargin
+  padding: Metrics.baseMargin,
 };
 const baseMargin = {
-  margin: Metrics.baseMargin
+  margin: Metrics.baseMargin,
 };
 const materialInputContainer = {
   paddingBottom: 45,
-  borderBottomColor: Colors.border
+  borderBottomColor: Colors.border,
 };
 const materialInput = {
   marginTop: 5,
   // fontFamily: "Lato-Bold",
-  color: Colors.text.primary
+  color: Colors.text.primary,
 };
 const materialInputNoUnderline = {
-  borderBottomWidth: 0
+  borderBottomWidth: 0,
 };
 const fontLato = {
-  fontFamily: "Lato"
+  fontFamily: 'Lato',
 };
 const primaryBackground = {
-  backgroundColor: Colors.background.primary
+  backgroundColor: Colors.background.primary,
 };
 const noBorderBottom = {
-  borderBottomWidth: 0
+  borderBottomWidth: 0,
 };
 
 const borderRadius = {
-  borderRadius: Metrics.borderRadius
+  borderRadius: Metrics.borderRadius,
 };
 
 const separator = {
   borderBottomWidth: 1,
-  borderColor: Colors.gary9
+  borderColor: Colors.gary9,
 };
 
-const logoImage = { width: 96, height: 112 };
+const logoImage = {width: 96, height: 112};
 
 const buttonStyle1 = {
   color: Colors.white,
   backgroundColor: Colors.blue,
   height: 45,
   borderRadius: 45 / 2,
-  ...centerInner
+  ...centerInner,
 };
 const buttonStyle2 = {
-  alignSelf: "center",
+  alignSelf: 'center',
   width: Metrics.screenWidth - 80,
   color: Colors.white,
   backgroundColor: Colors.blue,
   height: 45,
   borderRadius: 45 / 2,
-  ...centerInner
+  ...centerInner,
 };
 
 const textInputMaterialProps = {
   autoCorrect: false,
   selectionColor: Colors.grey3,
-  autoCapitalize: "sentences",
-  enablesReturnKeyAutomatically: true,
-  tintColor: Colors.text.primary,
-  baseColor: Colors.text.primary,
-  fontSize: constant.formInputSize,
-  labelFontSize: constant.labelSize,
-  style: materialInput
-};
-
-const forwardIcon = {
-  width: 9,
-  height: 15
-};
-
-const textInputMaterialProps2 = {
-  autoCorrect: false,
-  selectionColor: Colors.grey3,
-  autoCapitalize: "sentences",
+  autoCapitalize: 'sentences',
   enablesReturnKeyAutomatically: true,
   tintColor: Colors.text.primary,
   baseColor: Colors.text.primary,
   fontSize: constant.formInputSize,
   labelFontSize: constant.labelSize,
   style: materialInput,
-  inputContainerStyle: materialInputContainer
+};
+
+const forwardIcon = {
+  width: 9,
+  height: 15,
+};
+
+const textInputMaterialProps2 = {
+  autoCorrect: false,
+  selectionColor: Colors.grey3,
+  autoCapitalize: 'sentences',
+  enablesReturnKeyAutomatically: true,
+  tintColor: Colors.text.primary,
+  baseColor: Colors.text.primary,
+  fontSize: constant.formInputSize,
+  labelFontSize: constant.labelSize,
+  style: materialInput,
+  inputContainerStyle: materialInputContainer,
 };
 
 const textInputMaterialNoUndelineProps = {
-  inputContainerStyle: { borderBottomWidth: 0 }
+  inputContainerStyle: {borderBottomWidth: 0},
 };
 
 const roundedGreenButton = {
@@ -506,233 +506,233 @@ const roundedGreenButton = {
     shadowColor: Colors.green,
     shadowOffset: {
       width: 2,
-      height: 3
+      height: 3,
     },
     shadowOpacity: 0.34,
     shadowRadius: 6.27,
-    elevation: 2
+    elevation: 2,
   },
   textStyle: {
     fontFamily: Fonts.type.semiboldProximanova,
     letterSpacing: 1,
-    fontSize: Fonts.size.small
+    fontSize: Fonts.size.small,
   },
-  color: Colors.white
+  color: Colors.white,
 };
 const mapGreyTheme = [
   {
-    elementType: "geometry",
+    elementType: 'geometry',
     stylers: [
       {
-        color: "#ebe3cd"
-      }
-    ]
+        color: '#ebe3cd',
+      },
+    ],
   },
   {
-    elementType: "labels.text.fill",
+    elementType: 'labels.text.fill',
     stylers: [
       {
-        color: "#523735"
-      }
-    ]
+        color: '#523735',
+      },
+    ],
   },
   {
-    elementType: "labels.text.stroke",
+    elementType: 'labels.text.stroke',
     stylers: [
       {
-        color: "#f5f1e6"
-      }
-    ]
+        color: '#f5f1e6',
+      },
+    ],
   },
   {
-    featureType: "administrative",
-    elementType: "geometry.stroke",
+    featureType: 'administrative',
+    elementType: 'geometry.stroke',
     stylers: [
       {
-        color: "#c9b2a6"
-      }
-    ]
+        color: '#c9b2a6',
+      },
+    ],
   },
   {
-    featureType: "administrative.land_parcel",
-    elementType: "geometry.stroke",
+    featureType: 'administrative.land_parcel',
+    elementType: 'geometry.stroke',
     stylers: [
       {
-        color: "#dcd2be"
-      }
-    ]
+        color: '#dcd2be',
+      },
+    ],
   },
   {
-    featureType: "administrative.land_parcel",
-    elementType: "labels.text.fill",
+    featureType: 'administrative.land_parcel',
+    elementType: 'labels.text.fill',
     stylers: [
       {
-        color: "#ae9e90"
-      }
-    ]
+        color: '#ae9e90',
+      },
+    ],
   },
   {
-    featureType: "landscape.natural",
-    elementType: "geometry",
+    featureType: 'landscape.natural',
+    elementType: 'geometry',
     stylers: [
       {
-        color: "#dfd2ae"
-      }
-    ]
+        color: '#dfd2ae',
+      },
+    ],
   },
   {
-    featureType: "poi",
-    elementType: "geometry",
+    featureType: 'poi',
+    elementType: 'geometry',
     stylers: [
       {
-        color: "#dfd2ae"
-      }
-    ]
+        color: '#dfd2ae',
+      },
+    ],
   },
   {
-    featureType: "poi",
-    elementType: "labels.text.fill",
+    featureType: 'poi',
+    elementType: 'labels.text.fill',
     stylers: [
       {
-        color: "#93817c"
-      }
-    ]
+        color: '#93817c',
+      },
+    ],
   },
   {
-    featureType: "poi.park",
-    elementType: "geometry.fill",
+    featureType: 'poi.park',
+    elementType: 'geometry.fill',
     stylers: [
       {
-        color: "#a5b076"
-      }
-    ]
+        color: '#a5b076',
+      },
+    ],
   },
   {
-    featureType: "poi.park",
-    elementType: "labels.text.fill",
+    featureType: 'poi.park',
+    elementType: 'labels.text.fill',
     stylers: [
       {
-        color: "#447530"
-      }
-    ]
+        color: '#447530',
+      },
+    ],
   },
   {
-    featureType: "road",
-    elementType: "geometry",
+    featureType: 'road',
+    elementType: 'geometry',
     stylers: [
       {
-        color: "#f5f1e6"
-      }
-    ]
+        color: '#f5f1e6',
+      },
+    ],
   },
   {
-    featureType: "road.arterial",
-    elementType: "geometry",
+    featureType: 'road.arterial',
+    elementType: 'geometry',
     stylers: [
       {
-        color: "#fdfcf8"
-      }
-    ]
+        color: '#fdfcf8',
+      },
+    ],
   },
   {
-    featureType: "road.highway",
-    elementType: "geometry",
+    featureType: 'road.highway',
+    elementType: 'geometry',
     stylers: [
       {
-        color: "#f8c967"
-      }
-    ]
+        color: '#f8c967',
+      },
+    ],
   },
   {
-    featureType: "road.highway",
-    elementType: "geometry.stroke",
+    featureType: 'road.highway',
+    elementType: 'geometry.stroke',
     stylers: [
       {
-        color: "#e9bc62"
-      }
-    ]
+        color: '#e9bc62',
+      },
+    ],
   },
   {
-    featureType: "road.highway.controlled_access",
-    elementType: "geometry",
+    featureType: 'road.highway.controlled_access',
+    elementType: 'geometry',
     stylers: [
       {
-        color: "#e98d58"
-      }
-    ]
+        color: '#e98d58',
+      },
+    ],
   },
   {
-    featureType: "road.highway.controlled_access",
-    elementType: "geometry.stroke",
+    featureType: 'road.highway.controlled_access',
+    elementType: 'geometry.stroke',
     stylers: [
       {
-        color: "#db8555"
-      }
-    ]
+        color: '#db8555',
+      },
+    ],
   },
   {
-    featureType: "road.local",
-    elementType: "labels.text.fill",
+    featureType: 'road.local',
+    elementType: 'labels.text.fill',
     stylers: [
       {
-        color: "#806b63"
-      }
-    ]
+        color: '#806b63',
+      },
+    ],
   },
   {
-    featureType: "transit.line",
-    elementType: "geometry",
+    featureType: 'transit.line',
+    elementType: 'geometry',
     stylers: [
       {
-        color: "#dfd2ae"
-      }
-    ]
+        color: '#dfd2ae',
+      },
+    ],
   },
   {
-    featureType: "transit.line",
-    elementType: "labels.text.fill",
+    featureType: 'transit.line',
+    elementType: 'labels.text.fill',
     stylers: [
       {
-        color: "#8f7d77"
-      }
-    ]
+        color: '#8f7d77',
+      },
+    ],
   },
   {
-    featureType: "transit.line",
-    elementType: "labels.text.stroke",
+    featureType: 'transit.line',
+    elementType: 'labels.text.stroke',
     stylers: [
       {
-        color: "#ebe3cd"
-      }
-    ]
+        color: '#ebe3cd',
+      },
+    ],
   },
   {
-    featureType: "transit.station",
-    elementType: "geometry",
+    featureType: 'transit.station',
+    elementType: 'geometry',
     stylers: [
       {
-        color: "#dfd2ae"
-      }
-    ]
+        color: '#dfd2ae',
+      },
+    ],
   },
   {
-    featureType: "water",
-    elementType: "geometry.fill",
+    featureType: 'water',
+    elementType: 'geometry.fill',
     stylers: [
       {
-        color: "#b9d3c2"
-      }
-    ]
+        color: '#b9d3c2',
+      },
+    ],
   },
   {
-    featureType: "water",
-    elementType: "labels.text.fill",
+    featureType: 'water',
+    elementType: 'labels.text.fill',
     stylers: [
       {
-        color: "#92998d"
-      }
-    ]
-  }
+        color: '#92998d',
+      },
+    ],
+  },
 ];
 
 export default {
@@ -887,5 +887,5 @@ export default {
   lHeight10,
   forwardIcon,
   mapGreyTheme,
-  separator
+  separator,
 };
