@@ -1,8 +1,8 @@
 // @flow
 
 const type = {
-  // base: "ParalucentText-Book",
-  //  medium: "Paralucent-Medium"
+  base: 'ParalucentText-Book',
+  medium: 'Paralucent-Medium',
   /* base: "Helvetica Neue" */
   /* Platform.select({
     ios: "Helvetica Neue",

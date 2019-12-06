@@ -16,6 +16,8 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* React_StructureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* React_StructureTests.m */; };
+		52FA6A6823981633001ADD25 /* Paralucent-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FA6A57239812A4001ADD25 /* Paralucent-Medium.ttf */; };
+		52FA6A6923981639001ADD25 /* ParalucentText-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 52FA6A58239812A5001ADD25 /* ParalucentText-Book.ttf */; };
 		7F5778112201BCF5F132B725 /* libPods-React_Structure.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2F0C80E6C4AB371ADAC9D31 /* libPods-React_Structure.a */; };
 		B712B9BE435986D0C7C9A18B /* libPods-React_Structure-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6962C6BAE050489755D1DB4E /* libPods-React_Structure-tvOS.a */; };
 		D29532591EED01FA4D464117 /* libPods-React_StructureTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9B9B918B8082DB49E4DCBF6 /* libPods-React_StructureTests.a */; };
@@ -56,6 +58,8 @@
 		2D02E47B1E0B4A5D006451C7 /* React_Structure-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "React_Structure-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* React_Structure-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "React_Structure-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7B52B58ED6BB3803D71010 /* Pods-React_Structure-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-React_Structure-tvOS.release.xcconfig"; path = "Target Support Files/Pods-React_Structure-tvOS/Pods-React_Structure-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		52FA6A57239812A4001ADD25 /* Paralucent-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Paralucent-Medium.ttf"; sourceTree = "<group>"; };
+		52FA6A58239812A5001ADD25 /* ParalucentText-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ParalucentText-Book.ttf"; sourceTree = "<group>"; };
 		643F3ADEF703A5A78FFE366D /* Pods-React_Structure-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-React_Structure-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-React_Structure-tvOSTests/Pods-React_Structure-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		6962C6BAE050489755D1DB4E /* libPods-React_Structure-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-React_Structure-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BEA3F0DECAC28485D236F5A /* Pods-React_Structure-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-React_Structure-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-React_Structure-tvOSTests/Pods-React_Structure-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -161,8 +165,16 @@
 				A527D0905CDBCF5399DF358D /* Pods-React_StructureTests.debug.xcconfig */,
 				B598B337DFE6D07553638FE4 /* Pods-React_StructureTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		52FA6A542398122C001ADD25 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				52FA6A57239812A4001ADD25 /* Paralucent-Medium.ttf */,
+				52FA6A58239812A5001ADD25 /* ParalucentText-Book.ttf */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -175,6 +187,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				52FA6A542398122C001ADD25 /* Resources */,
 				13B07FAE1A68108700A75B9A /* React_Structure */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* React_StructureTests */,
@@ -308,6 +321,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -336,6 +350,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52FA6A6923981639001ADD25 /* ParalucentText-Book.ttf in Resources */,
+				52FA6A6823981633001ADD25 /* Paralucent-Medium.ttf in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);

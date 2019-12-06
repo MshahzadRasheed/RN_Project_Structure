@@ -8,8 +8,8 @@ import {Actions} from 'react-native-router-flux';
 import DataHandler from '../../services/DataHandler';
 import {INVALID_EMAIL_ERROR, INVALID_PASSWORD_ERROR} from '../../constants';
 import {Text, ButtonView, TextInput, Loader} from '../../components';
-import {Images, AppStyles, Colors} from '../../theme';
-//import styles from './styles';
+import {Images, AppStyles, Metrics, Colors} from '../../theme';
+import styles from './styles';
 import Util from '../../util';
 
 class Login extends Component {
@@ -165,9 +165,9 @@ class Login extends Component {
             AppStyles.mTop25,
           ]}>
           <Text
-            color={Colors.white}
+            color={Colors.black}
             textAlign="center"
-            // type="medium"
+            type="medium"
             size="small"
             style={AppStyles.letterSpace3}>
             LOGIN
@@ -182,7 +182,8 @@ class Login extends Component {
       <ButtonView onPress={Actions.forgotPassword}>
         <Text
           style={[AppStyles.mTop25, AppStyles.mBottom30]}
-          textAlign="center">
+          textAlign="center"
+          type="base">
           Forgot Password ?
         </Text>
       </ButtonView>
@@ -289,25 +290,3 @@ const mapStateToProps = () => ({});
 const actions = {};
 
 export default connect(mapStateToProps, actions)(Login);
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    padding: Metrics.baseMargin,
-    backgroundColor: Colors.background.primary,
-    paddingTop: Metrics.statusBarHeight,
-    ...AppStyles.pBottom0,
-  },
-  button: {
-    marginTop: Metrics.ratio(30),
-  },
-  logo: {width: 96, height: 112},
-  lineThrough: {
-    height: 0.5,
-    backgroundColor: Colors.grey4,
-    position: 'absolute',
-    top: 6,
-    left: 0,
-    right: 0,
-  },
-});
